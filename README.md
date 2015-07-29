@@ -1,2 +1,2 @@
 # aisvg2sprite
-Convert illustrator SVG to pretty SVG sprite
+Convert illustrator(ai) SVG to pretty SVG sprite
