@@ -1,0 +1,29 @@
+{
+  "name": "aisvg2sprite",
+  "version": "0.0.1",
+  "description": "Convert illustrator(ai) SVG to pretty SVG sprite",
+  "preferGlobal": true,
+  "bin": {
+    "aisvg2sprite": "./bin/index"
+  },
+  "keywords": [
+    "svg sprite",
+    "ai svg",
+    "illustrator svg",
+    "svg converter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dolymood/aisvg2sprite.git"
+  },
+  "author": "dolymood",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dolymood/aisvg2sprite/issues"
+  },
+  "homepage": "https://github.com/dolymood/aisvg2sprite#readme",
+  "dependencies": {
+    "commander": "~2.8.1",
+    "jsdom": "~3.1.2"
+  }
+}

@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+var program = require('commander')
+
+var pkg = require('../package.json')
+var build = require('../lib/main')
+
+program
+  .version(pkg.version)
+  .usage('<file> <output> [options]')
+  .option('-v', 'get version')
+  .option('-f, --remove-fill [pattern]', 'remove fill attributes by [pattern]')
+  .option('-s, --remove-stroke [pattern]', 'remove stroke attributes by [pattern]')
+  .option('-m, --minimize', 'minimize output svg file')
+  .option('-d, --demo', 'create demo.html')
+
+program.parse(process.argv)
+
+if (program.args.length === 0) {
+  program.outputHelp()
+  return
+}
+
+build(program.args[0], program.args[1], program)
