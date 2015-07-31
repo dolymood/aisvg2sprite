@@ -15,8 +15,8 @@ npm install -g aisvg2sprite
     -h, --help                     output usage information
     -V, --version                  output the version number
     -v                             get version
-    -f, --remove-fill [pattern]    remove fill attributes by [pattern]
-    -s, --remove-stroke [pattern]  remove stroke attributes by [pattern]
+    -f, --remove-fill [pattern]    remove fill attributes by [pattern](default [a-f0-9])
+    -s, --remove-stroke [pattern]  remove stroke attributes by [pattern](default [a-f0-9])
     -m, --minimize                 minimize output svg file
     -d, --demo                     create demo.html
 ```

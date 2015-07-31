@@ -9,8 +9,8 @@ program
   .version(pkg.version)
   .usage('<file> <output> [options]')
   .option('-v', 'get version')
-  .option('-f, --remove-fill [pattern]', 'remove fill attributes by [pattern]')
-  .option('-s, --remove-stroke [pattern]', 'remove stroke attributes by [pattern]')
+  .option('-f, --remove-fill [pattern]', 'remove fill attributes by [pattern](default [a-f0-9])')
+  .option('-s, --remove-stroke [pattern]', 'remove stroke attributes by [pattern](default [a-f0-9])')
   .option('-m, --minimize', 'minimize output svg file')
   .option('-d, --demo', 'create demo.html')
 
