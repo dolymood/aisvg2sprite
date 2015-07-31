@@ -1,6 +1,6 @@
 {
   "name": "aisvg2sprite",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Convert illustrator(ai) SVG to pretty SVG sprite",
   "preferGlobal": true,
   "bin": {
