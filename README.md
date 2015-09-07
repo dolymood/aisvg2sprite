@@ -20,6 +20,36 @@ npm install -g aisvg2sprite
     -m, --minimize                 minimize output svg file
     -d, --demo                     create demo.html
 ```
+## Tips
+
+How can i use SVG sprite in pages?
+
+### Without `remove-fill` or `remove-stroke` option
+
+```css
+symbol *:not([style*="fill:none"]) {fill:inherit!important;}
+symbol *:not([style*="stroke:none"]) {stroke:inherit!important;}
+.icon {width:50px;height:50px;}
+.icon > use {stroke:red;stroke-width:0;fill:green;}
+```
+
+```html
+<svg class="icon"><use xlink:href="#i001"></use></svg>
+```
+
+See `/usage/withoutOptions/demo.html`
+
+### With `remove-fill` or `remove-stroke` option
+
+```css
+.icon {width:50px;height:50px;stroke:red;stroke-width:0;fill:green;}
+```
+
+```html
+<svg class="icon"><use xlink:href="#i001"></use></svg>
+```
+
+See `/usage/withOptions/demo.html`
 
 ## examples
 
@@ -48,6 +78,8 @@ npm install -g aisvg2sprite
 ## Thanks:
 
 <http://www.zhangxinxu.com/sp/svg.html>
+
+<http://www.w3cplus.com/svg/styling-svg-use-content-css.html>
 
 ## License
 
